@@ -17,7 +17,7 @@ Imagine a row in a spreadsheet—each column has a name (“Name”, “Age”, 
 ### **What is namedtuple?**
 
 - Lets you create tuple-like objects with **named fields**.
-- Provides code readability and safety: you can use `person.age` and `person.name` instead of `person` and `person`.[^4][^5][^6][^7][^8]
+- Provides code readability and safety: you can use `person.age` and `person.name` instead of `person[0]` and `person[1]`.[^4][^5][^6][^7][^8]
 
 
 ### **How to Create and Use**
@@ -34,7 +34,7 @@ print(s1.age)        # Output: 21
 print(s1.dob)        # Output: '25-04-2004'
 
 # You can also access by index, like a normal tuple:
-print(s1[^20])         # Output: '25-04-2004'
+print(s1[2])         # Output: '25-04-2004'
 ```
 
 
@@ -134,7 +134,7 @@ print(freq)   # {'B': 1, 'A': 3, 'N': 2}
 words = ["apple", "ant", "bat", "ball", "cat"]
 grouped = defaultdict(list)
 for w in words:
-    grouped[w].append(w)
+    grouped[w[0]].append(w)
 print(grouped)  # {'a': ['apple', 'ant'], 'b': ['bat', 'ball'], 'c': ['cat']}
 ```
 

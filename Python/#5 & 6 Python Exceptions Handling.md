@@ -465,7 +465,7 @@ say_hello()       # Output: Hello!
 
 ```python
 my_list = [(1, 'one'), (3, 'three'), (2, 'two')]
-my_list.sort(key=lambda x: x[^12])
+my_list.sort(key=lambda x: x[1])
 print(my_list)  # Sorts by name: [(1, 'one'), (3, 'three'), (2, 'two')]
 ```
 
@@ -533,7 +533,7 @@ print(add10(7))   # Output: 17
 
 ```python
 data = [(2, 3), (1, 2), (4, 1)]
-data.sort(key=lambda x: x[^12])
+data.sort(key=lambda x: x[1])
 print(data)  # Output: [(4, 1), (1, 2), (2, 3)]
 ```
 
@@ -626,6 +626,7 @@ Python mainly uses **two types of loops**:
 
 ```python
 for item in sequence:
+    pass
     # code block
 ```
 
@@ -660,6 +661,7 @@ for i in range(1, 5):
 
 ```python
 while condition:
+    pass
     # code block
 ```
 
@@ -1107,7 +1109,7 @@ Python’s standard library defines many exceptions for common errors:
 | `ValueError` | Invalid value passed | `int('hi')` |
 | `TypeError` | Operation on object of wrong type | `'a' + 1` |
 | `KeyError` | Accessing non-existent dict key | `mydict['missing']` |
-| `IndexError` | Accessing out-of-range list index | `mylist[^99]` |
+| `IndexError` | Accessing out-of-range list index | `mylist[99]` |
 | `FileNotFoundError` | File path does not exist | `open('notfound.txt')` |
 | `ImportError` | Module not found | `import unknownmodule` |
 

@@ -107,7 +107,7 @@ with open("myfile.txt", "r") as file:
 
 ***
 
-## **6. Example: Full Read \& Write Workflow**
+## **6. Example: Full Read & Write Workflow**
 
 ```python
 # Writing
@@ -148,7 +148,7 @@ with open("students.txt", "r") as f:
 
 - FreeCodeCamp: File Handling in Python[^2]
 - GeeksforGeeks: Reading and Writing Text Files[^10]
-- W3Schools File Open \& File Write[^5][^4]
+- W3Schools File Open & File Write[^5][^4]
 - Real Python: Reading and Writing Files in Python[^11]
 - Programiz: Python File Handling
 
@@ -199,7 +199,7 @@ Appending to a file means adding new data **to the end** of the file **without d
 
 ## **2. Opening a File in Append Mode**
 
-- In Python, use the open mode **"a"** (append) or **"a+"** (append \& read) to open files for appending.
+- In Python, use the open mode **"a"** (append) or **"a+"** (append & read) to open files for appending.
 
 **Syntax:**
 
@@ -327,7 +327,7 @@ with open("students.txt", "a") as f:
 ## **10. Youtube Video Tutorials**
 
 - **Append to Text File - Python Programming Basics For Beginners** ([YouTube])[^5]
-- **Python for Beginners \#3: Append Content to Files Without Overwriting!** ([YouTube])[^6]
+- **Python for Beginners #3: Append Content to Files Without Overwriting!** ([YouTube])[^6]
 
 ***
 
@@ -511,7 +511,7 @@ with open("stud_obj.pkl", "rb") as f:
 
 ***
 
-## **7. Important Notes \& Security Warnings**
+## **7. Important Notes & Security Warnings**
 
 - **Never unpickle data from an untrusted source** — it can execute arbitrary code during deserialization.[^5][^6]
 - Pickle is **Python-specific** (not for sharing data with other languages).
@@ -595,4 +595,3 @@ Now you know how to save and load complex Python data — not just as plain text
 [^14]: https://www.python4data.science/en/latest/data-processing/serialisation-formats/pickle/pickle-examples.html
 
 [^15]: https://www.tutorialsteacher.com/python/python-read-write-file
-

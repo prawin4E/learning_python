@@ -42,7 +42,7 @@ print(re.findall(r"\d+", "I have 2 cats and 10 fish."))
 
 | Symbol | Pattern | Example String | Matches |
 | :-- | :-- | :-- | :-- |
-| `.` | Any single character | `"cat."` vs `"cats"`, `"cat!"` | `cats`, `cat!` |
+| `.` | Any single character | `"cat." vs "cats", "cat!"` | `cats`, `cat!` |
 | `\d` | Any digit | `"Price: 45"` | `4`, `5` |
 | `\w` | Word character | `"A23#B"` | `A23`, `B` |
 | `\s` | Whitespace | `"Hi \t there \n"` | spaces, tab, newline |
@@ -116,7 +116,7 @@ if re.match(pattern, pw):
 ```python
 sentence = "Born: 23-08-2000, joined on 01-02-2020"
 dates = re.findall(r'\b\d{2}-\d{2}-\d{4}\b', sentence)
-print(dates)  # ['23-08-2000', '01-02-2020']
+print(dates)  # [\'23-08-2000\', \'01-02-2020\']
 ```
 
 
@@ -138,7 +138,7 @@ print(cleaned)  # Output: "This is spaced out."
 ```python
 data = "A,B;C,D;E"
 items = re.split(r"[;,]", data)
-print(items)    # ['A', 'B', 'C', 'D', 'E']
+print(items)    # [\'A\', \'B\', \'C\', \'D\', \'E\']
 ```
 
 
@@ -149,7 +149,7 @@ print(items)    # ['A', 'B', 'C', 'D', 'E']
 ```python
 s = "This is a TEST of CAPS and Python"
 caps = re.findall(r"\b[A-Z]{2,}\b", s)
-print(caps)  # ['TEST', 'CAPS']
+print(caps)  # [\'TEST\', \'CAPS\']
 ```
 
 
@@ -160,7 +160,7 @@ print(caps)  # ['TEST', 'CAPS']
 ```python
 tweet = "#Python is cool #AI #2025"
 tags = re.findall(r"#\w+", tweet)
-print(tags)  # ['#Python', '#AI', '#2025']
+print(tags)  # [\'#Python\', \'#AI\', \'#2025\']
 ```
 
 
@@ -170,7 +170,7 @@ print(tags)  # ['#Python', '#AI', '#2025']
 
 ```python
 times = "Meeting at 18:30, call at 09:05"
-all_times = re.findall(r"\b([^4]\d|2[0-3]):[0-5]\d\b", times)
+all_times = re.findall(r"\b([01]\d|2[0-3]):[0-5]\d\b", times)
 print(all_times)  # ['18:30', '09:05']
 ```
 
@@ -463,7 +463,7 @@ re.findall(r"\b\w+ing\b", "working, ping, ring, sing, going, go")
 
 ***
 
-## **12. References \& Further Learning**
+## **12. References & Further Learning**
 
 - Python Docs: Regular Expression HOWTO, Module: re[^4][^1]
 - Google Python Education: Regular Expressions[^2]
@@ -476,7 +476,7 @@ re.findall(r"\b\w+ing\b", "working, ping, ring, sing, going, go")
 
 - **Regular Expressions in Python – FULL COURSE** ([YouTube])[^6]
 - **Regular Expression Methods in Python** ([YouTube])[^7]
-- **Complete Regular Expressions Tutorial (Wildcard \& More)** ([YouTube])[^8]
+- **Complete Regular Expressions Tutorial (Wildcard & More)** ([YouTube])[^8]
 
 ***
 

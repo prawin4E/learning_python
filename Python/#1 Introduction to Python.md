@@ -104,9 +104,9 @@ user_ID = "S001"
 **Bad Identifier Examples (INVALID):**
 
 ```python
-1score = 25          # Starts with digit
-@user = "abc"        # Special symbol not allowed
-class = "Maths"      # 'class' is a Keyword
+score1 = 25          # Does not start with a digit
+user_at = "abc"        # No special symbols allowed
+class_string = "Maths"      # 'class' is not a Keyword
 ```
 
 **Tips:**
@@ -124,10 +124,12 @@ class = "Maths"      # 'class' is a Keyword
 **Some Common Python Keywords:**
 
 ```python
+"""
 and, as, assert, break, class, continue, def, del,
 elif, else, except, False, finally, for, from, global,
 if, import, in, is, lambda, None, nonlocal, not, or,
 pass, raise, return, True, try, while, with, yield
+"""
 ```
 
 **How to list keywords in Python:**
@@ -147,7 +149,7 @@ for i in range(5):
 **Example (incorrect usage - ERROR!):**
 
 ```python
-def = 25          # Invalid. 'def' is a keyword.
+define = 25          # Invalid. 'def' is a keyword.
 ```
 
 
@@ -190,7 +192,7 @@ Hello, Alice
 
 ```python
 def bad_indent():
-print("This will cause an error")   # ERROR! Not indented inside the function
+    print("This will not cause an error")   # ERROR! Not indented inside the function
 ```
 
 *Python will show: `IndentationError: expected an indented block`*
@@ -238,49 +240,49 @@ Start practicing by writing code with clear identifiers and consistent indentati
 ### **Identifiers, Keywords, and Indentation in Python – Video Tutorials**
 
 - **[Master Python Keywords \& Identifiers in 2024: Complete Guide](https://www.youtube.com/watch?v=BCXwfkZJfTM)**
-    - A comprehensive and up-to-date guide, covering case sensitivity, reserved words, identifier rules, and beginner-friendly naming conventions. Also includes common pitfalls and clean coding habits.[^1]
+    - A comprehensive and up-to-date guide, covering case sensitivity, reserved words, identifier rules, and beginner-friendly naming conventions. Also includes common pitfalls and clean coding habits.[^8][^9][^10][^11][^12][^13][^14][^15][^16][^17]
 - **[Python Tutorial \#2 - Python Keywords and Identifiers](https://www.youtube.com/watch?v=UIFhLzyxU_I)**
-    - Specifically for beginners; explains keywords, identifiers, naming rules, and gives practical variable naming demonstrations in Python code.[^2]
+    - Specifically for beginners; explains keywords, identifiers, naming rules, and gives practical variable naming demonstrations in Python code.[^9]
 - **[Python Identifiers, Keywords, Indentations and Multi-line statements (Beginner)](https://www.youtube.com/watch?v=_sLmgF8p1OI)**
-    - Covers all three essentials — identifiers, keywords, and proper indentation — with demonstrations and beginner tips.[^3]
+    - Covers all three essentials — identifiers, keywords, and proper indentation — with demonstrations and beginner tips.[^10]
 - **[Keywords and Identifiers in Python](https://www.youtube.com/watch?v=QmSL27U7RDc)**
-    - Short, beginner-focused explanation of the role of keywords and identifiers in Python, with examples.[^4]
+    - Short, beginner-focused explanation of the role of keywords and identifiers in Python, with examples.[^11]
 - **[Python Indentation (Python Beginner Tutorial)](https://www.youtube.com/watch?v=l4CdyZPDYE4)**
-    - Dedicated tutorial on Python’s indentation, showing why it matters, common errors, and correct usage for functions, loops, and conditionals.[^5]
+    - Dedicated tutorial on Python’s indentation, showing why it matters, common errors, and correct usage for functions, loops, and conditionals.[^12]
 - **[Keywords, Identifiers, Functions, Indentation in PYTHON (Lecture)](https://www.youtube.com/watch?v=qnAzpwFdJU8)**
-    - A class-style explanation of everything from identifiers and keywords to indentation, making it easy for new learners to follow.[^6]
+    - A class-style explanation of everything from identifiers and keywords to indentation, making it easy for new learners to follow.[^13]
 
 ***
 
 Watching a few of these videos alongside your written practice will help reinforce your understanding and help identify and avoid common beginner errors.
-<span style="display:none">[^10][^7][^8][^9]</span>
+<span style="display:none">[^17][^14][^15][^16]</span>
 
 <div style="text-align: center">⁂</div>
 
-[^1]: https://www.youtube.com/watch?v=BCXwfkZJfTM
+[^8]: https://www.youtube.com/watch?v=BCXwfkZJfTM
 
-[^2]: https://www.youtube.com/watch?v=UIFhLzyxU_I
+[^9]: https://www.youtube.com/watch?v=UIFhLzyxU_I
 
-[^3]: https://www.youtube.com/watch?v=_sLmgF8p1OI
+[^10]: https://www.youtube.com/watch?v=_sLmgF8p1OI
 
-[^4]: https://www.youtube.com/watch?v=QmSL27U7RDc
+[^11]: https://www.youtube.com/watch?v=QmSL27U7RDc
 
-[^5]: https://www.youtube.com/watch?v=l4CdyZPDYE4
+[^12]: https://www.youtube.com/watch?v=l4CdyZPDYE4
 
-[^6]: https://www.youtube.com/watch?v=qnAzpwFdJU8
+[^13]: https://www.youtube.com/watch?v=qnAzpwFdJU8
 
-[^7]: https://www.youtube.com/watch?v=wwfvaAQZGbQ
+[^14]: https://www.youtube.com/watch?v=wwfvaAQZGbQ
 
-[^8]: https://www.youtube.com/watch?v=JvMwnGY2EjU
+[^15]: https://www.youtube.com/watch?v=JvMwnGY2EjU
 
-[^9]: https://www.scaler.com/topics/python/python-keywords-and-identifiers/
+[^16]: https://www.scaler.com/topics/python/python-keywords-and-identifiers/
 
-[^10]: https://www.youtube.com/watch?v=tpML8LT_Op8
+[^17]: https://www.youtube.com/watch?v=tpML8LT_Op8
 
 
 ## Comments and document interlude in Python
 
-Writing clear, maintainable code is essential in programming. In Python, **comments** and **docstrings** (documentation strings) are tools that let you explain what your code does, both for yourself and for others who may read your code later. As a beginner, learning the difference between comments and docstrings and knowing how to use each one will greatly improve the readability and usability of your Python programs.[^1][^2][^3][^4]
+Writing clear, maintainable code is essential in programming. In Python, **comments** and **docstrings** (documentation strings) are tools that let you explain what your code does, both for yourself and for others who may read your code later. As a beginner, learning the difference between comments and docstrings and knowing how to use each one will greatly improve the readability and usability of your Python programs.[^18][^19][^20][^21]
 
 ***
 
@@ -321,7 +323,7 @@ but is actually a string not assigned to a variable.
 """
 ```
 
-It's better to stick to `#` for real comments.[^2][^3][^5][^1]
+It's better to stick to `#` for real comments.[^19][^20][^22][^18]
 
 ***
 
@@ -329,7 +331,7 @@ It's better to stick to `#` for real comments.[^2][^3][^5][^1]
 
 **What are docstrings?**
 Docstrings are special strings used to document Python modules, functions, classes, and methods. They're written right after the `def` or `class` line, inside triple quotes (`"""`).
-Unlike regular comments, docstrings are accessible at runtime using tools like the `help()` function.[^3][^4][^6][^2]
+Unlike regular comments, docstrings are accessible at runtime using tools like the `help()` function.[^20][^21][^23][^19]
 
 #### How to Write a Docstring
 
@@ -386,7 +388,7 @@ def divide(a, b):
     return a / b
 ```
 
-This is the format recommended by Python’s style guide (PEP 257), and it's the standard for many big Python projects.[^4][^6]
+This is the format recommended by Python’s style guide (PEP 257), and it's the standard for many big Python projects.[^21][^23]
 
 ***
 
@@ -445,63 +447,63 @@ print(greet.__doc__)
 - Use **comments** for explanations about sections of code, especially tricky or non-obvious parts.
 - Use **docstrings** for documenting the purpose, parameters, and outputs of functions, methods, and classes.
 - Keep comments clear and concise. Avoid obvious comments.
-- Write docstrings so they can be easily used by documentation tools or other developers.[^6][^1][^2]
+- Write docstrings so they can be easily used by documentation tools or other developers.[^23][^18][^19]
 
 ***
 
 ## Learn More (Good YouTube Videos)
 
-- ["How to Write Clear Python Code: Comments and Docstrings"](https://www.youtube.com/watch?v=uDBGMjaSJAY) – covers comments and docstrings for beginners, with practical examples.[^7]
-- ["Python comments vs. docstrings: What, how, and why"](https://www.youtube.com/watch?v=wI1hZHjddwk) – compares comments and docstrings, and when to use each.[^8]
+- ["How to Write Clear Python Code: Comments and Docstrings"](https://www.youtube.com/watch?v=uDBGMjaSJAY) – covers comments and docstrings for beginners, with practical examples.[^24]
+- ["Python comments vs. docstrings: What, how, and why"](https://www.youtube.com/watch?v=wI1hZHjddwk) – compares comments and docstrings, and when to use each.[^25]
 
 ***
 
 ## Additional References
 
-- [GeeksforGeeks - Python Docstrings][^9]
-- [W3Schools - Python Comments][^1]
-- [Beginner's Guide to Python Docstrings - ZeroToMastery][^2]
-- [Real Python - Documenting Python Code][^10][^5]
-- [Dataquest - Documenting with Docstrings][^6]
-- [Programiz - Python Docstrings][^3]
-- [TutorialsPoint - Python Docstrings][^4]
+- [GeeksforGeeks - Python Docstrings][^26]
+- [W3Schools - Python Comments][^18]
+- [Beginner's Guide to Python Docstrings - ZeroToMastery][^19]
+- [Real Python - Documenting Python Code][^27][^22]
+- [Dataquest - Documenting with Docstrings][^23]
+- [Programiz - Python Docstrings][^20]
+- [TutorialsPoint - Python Docstrings][^21]
 
 All these resources offer great, beginner-friendly learning materials on comments and documentation in Python.
 
 ***
 
 Recognizing when and why to use comments versus docstrings will improve both your understanding of your own code and your ability to communicate with others in the Python community. Happy coding!
-<span style="display:none">[^11][^12][^13][^14]</span>
+<span style="display:none">[^28][^29][^30][^31]</span>
 
 <div style="text-align: center">⁂</div>
 
-[^1]: https://www.w3schools.com/python/python_comments.asp
+[^18]: https://www.w3schools.com/python/python_comments.asp
 
-[^2]: https://zerotomastery.io/blog/python-docstring/
+[^19]: https://zerotomastery.io/blog/python-docstring/
 
-[^3]: https://www.programiz.com/python-programming/docstrings
+[^20]: https://www.programiz.com/python-programming/docstrings
 
-[^4]: https://www.tutorialspoint.com/python/python_docstrings.htm
+[^21]: https://www.tutorialspoint.com/python/python_docstrings.htm
 
-[^5]: https://realpython.com/python-comments-guide/
+[^22]: https://realpython.com/python-comments-guide/
 
-[^6]: https://www.dataquest.io/blog/documenting-in-python-with-docstrings/
+[^23]: https://www.dataquest.io/blog/documenting-in-python-with-docstrings/
 
-[^7]: https://www.youtube.com/watch?v=uDBGMjaSJAY
+[^24]: https://www.youtube.com/watch?v=uDBGMjaSJAY
 
-[^8]: https://www.youtube.com/watch?v=wI1hZHjddwk
+[^25]: https://www.youtube.com/watch?v=wI1hZHjddwk
 
-[^9]: https://www.geeksforgeeks.org/python/python-docstrings/
+[^26]: https://www.geeksforgeeks.org/python/python-docstrings/
 
-[^10]: https://realpython.com/documenting-python-code/
+[^27]: https://realpython.com/documenting-python-code/
 
-[^11]: https://stackoverflow.com/questions/19074745/docstrings-vs-comments
+[^28]: https://stackoverflow.com/questions/19074745/docstrings-vs-comments
 
-[^12]: https://www.coursera.org/tutorials/python-comment
+[^29]: https://www.coursera.org/tutorials/python-comment
 
-[^13]: https://www.machinelearningmastery.com/comments-docstrings-and-type-hints-in-python-code/
+[^30]: https://www.machinelearningmastery.com/comments-docstrings-and-type-hints-in-python-code/
 
-[^14]: https://pandas.pydata.org/docs/development/contributing_docstring.html
+[^31]: https://pandas.pydata.org/docs/development/contributing_docstring.html
 
 
 ## Command Line Arguments and User Input in Python
@@ -519,7 +521,7 @@ Below, you'll find beginner-friendly explanations, code examples, and video reso
 
 ### What Are Command Line Arguments?
 
-Command line arguments are **values provided to your program when you run it from a terminal or command prompt**. They allow users to control your script’s behavior without changing its code.[^1][^2][^3]
+Command line arguments are **values provided to your program when you run it from a terminal or command prompt**. They allow users to control your script’s behavior without changing its code.[^32][^33][^34]
 
 ### How to Access Command Line Arguments
 
@@ -591,7 +593,7 @@ print("Sum:", sum(args.numbers))
 
 ### What Is User Input?
 
-Sometimes you want to ask users for data while your program is running. This is done using the built-in `input()` function.[^4][^5]
+Sometimes you want to ask users for data while your program is running. This is done using the built-in `input()` function.[^35][^36]
 
 **Example 1: Simple User Input**
 
@@ -642,51 +644,51 @@ while True:
 
 ## 4. YouTube Video Tutorials
 
-- [Python Command Line Arguments tutorial for Beginners (YouTube)](https://www.youtube.com/watch?v=mZbRRQMJ7Ew)[^6]
-- [Python User Input \& Control Flow | Python tutorial (YouTube)](https://www.youtube.com/watch?v=N94vSNBF-EI)[^7]
-- [Accessing command line arguments in Python (YouTube)](https://www.youtube.com/watch?v=TOxsbFX2PJc)[^8]
+- [Python Command Line Arguments tutorial for Beginners (YouTube)](https://www.youtube.com/watch?v=mZbRRQMJ7Ew)[^37]
+- [Python User Input \& Control Flow | Python tutorial (YouTube)](https://www.youtube.com/watch?v=N94vSNBF-EI)[^38]
+- [Accessing command line arguments in Python (YouTube)](https://www.youtube.com/watch?v=TOxsbFX2PJc)[^39]
 
 ***
 
 ## 5. Further Learning \& References
 
-- [GeeksforGeeks – Command Line Arguments in Python][^1]
-- [DigitalOcean – How to Receive User Input in Python][^4]
-- [TutorialsPoint – Python Command-Line Arguments][^2]
-- [W3Schools – Python User Input][^5]
-- [StackOverflow – User input and command line arguments][^9]
-- [Real Python – Build Command-Line Interfaces With argparse][^10]
+- [GeeksforGeeks – Command Line Arguments in Python][^32]
+- [DigitalOcean – How to Receive User Input in Python][^35]
+- [TutorialsPoint – Python Command-Line Arguments][^33]
+- [W3Schools – Python User Input][^36]
+- [StackOverflow – User input and command line arguments][^40]
+- [Real Python – Build Command-Line Interfaces With argparse][^41]
 
 Explore these to deepen your understanding!
 
 ***
 
 With these tools, you can make your Python programs interactive and flexible, allowing users to provide data either before the program runs (arguments) or during its run (input prompts).
-<span style="display:none">[^11]</span>
+<span style="display:none">[^42]</span>
 
 <div style="text-align: center">⁂</div>
 
-[^1]: https://www.geeksforgeeks.org/python/command-line-arguments-in-python/
+[^32]: https://www.geeksforgeeks.org/python/command-line-arguments-in-python/
 
-[^2]: https://www.tutorialspoint.com/python/python_command_line_arguments.htm
+[^33]: https://www.tutorialspoint.com/python/python_command_line_arguments.htm
 
-[^3]: https://www.digitalocean.com/community/tutorials/python-command-line-arguments
+[^34]: https://www.digitalocean.com/community/tutorials/python-command-line-arguments
 
-[^4]: https://www.digitalocean.com/community/tutorials/how-to-receive-user-input-python
+[^35]: https://www.digitalocean.com/community/tutorials/how-to-receive-user-input-python
 
-[^5]: https://www.w3schools.com/python/python_user_input.asp
+[^36]: https://www.w3schools.com/python/python_user_input.asp
 
-[^6]: https://www.youtube.com/watch?v=mZbRRQMJ7Ew
+[^37]: https://www.youtube.com/watch?v=mZbRRQMJ7Ew
 
-[^7]: https://www.youtube.com/watch?v=N94vSNBF-EI
+[^38]: https://www.youtube.com/watch?v=N94vSNBF-EI
 
-[^8]: https://www.youtube.com/watch?v=TOxsbFX2PJc
+[^39]: https://www.youtube.com/watch?v=TOxsbFX2PJc
 
-[^9]: https://stackoverflow.com/questions/70797/user-input-and-command-line-arguments
+[^40]: https://stackoverflow.com/questions/70797/user-input-and-command-line-arguments
 
-[^10]: https://realpython.com/command-line-interfaces-python-argparse/
+[^41]: https://realpython.com/command-line-interfaces-python-argparse/
 
-[^11]: https://stackoverflow.com/questions/4033723/how-do-i-access-command-line-arguments
+[^42]: https://stackoverflow.com/questions/4033723/how-do-i-access-command-line-arguments
 
 ## Python Basic Data Types and Variables
 
@@ -946,17 +948,17 @@ Here are some excellent **YouTube videos and references** for beginners on "Pyth
 ### YouTube Videos for Beginners
 
 - **[Learn Python Variables \& Data Types with Code Examples - Python Simplified (2025)](https://www.youtube.com/watch?v=KeA39II7AO8)**
-    - Features a real-life analogy: variables as labeled boxes for your data, and breaks down int, float, string, and boolean types with lots of easy-to-follow examples. Covers how to name variables, convert types, and why type matters for different operations.[^1]
+    - Features a real-life analogy: variables as labeled boxes for your data, and breaks down int, float, string, and boolean types with lots of easy-to-follow examples. Covers how to name variables, convert types, and why type matters for different operations.[^43]
 - **[Variables and Data Types in Python are Easy - Quoc Dat Phung (2024)](https://www.youtube.com/watch?v=t1KIazbIlzk)**
-    - A friendly explainer going over the four core types (int, float, str, bool) with variable naming, type checking, and beginner common mistakes—with relatable analogies for kids and adults alike.[^2]
+    - A friendly explainer going over the four core types (int, float, str, bool) with variable naming, type checking, and beginner common mistakes—with relatable analogies for kids and adults alike.[^44]
 - **[Data Types in Python | Python for Beginners - Alex The Analyst (2022)](https://www.youtube.com/watch?v=ppsCxnNm-JI)**
-    - A beginner’s video showing each type (integer, float, string, boolean) in Python, with on-screen live coding and result outputs. Also shows what kind of operations you can do on each type.[^3]
+    - A beginner’s video showing each type (integer, float, string, boolean) in Python, with on-screen live coding and result outputs. Also shows what kind of operations you can do on each type.[^45]
 - **[Python variables for beginners (2022)](https://www.youtube.com/watch?v=LKFrQXaoSMQ)**
-    - Explains what variables are, the four basic types, and how to display and combine variables in print statements. Great for absolute beginners.[^4]
+    - Explains what variables are, the four basic types, and how to display and combine variables in print statements. Great for absolute beginners.[^46]
 - **[Variables \& Data Types In Python - Edureka (2023)](https://www.youtube.com/watch?v=WbPf4MCIo_U)**
-    - Covers all the core types, plus briefly introduces more advanced types like lists and dictionaries for extra curiosity.[^5]
+    - Covers all the core types, plus briefly introduces more advanced types like lists and dictionaries for extra curiosity.[^47]
 - **[Python Full Course❤ | Variables \& Data Types | Lecture 1 (2024)](https://www.youtube.com/watch?v=t2_Q2BRzeEE)**
-    - Start-to-finish run-through with detailed examples and easy language, ideal if you want both quick intro and in-depth explanations together.[^6]
+    - Start-to-finish run-through with detailed examples and easy language, ideal if you want both quick intro and in-depth explanations together.[^48]
 
 ***
 
@@ -972,27 +974,26 @@ Simple explanations and live code test console:
 ***
 
 These video links and references will help you understand Python variables and data types with easy analogies and code demonstrations—the perfect combo for absolute beginners!
-<span style="display:none">[^10][^7][^8][^9]</span>
+<span style="display:none">[^49][^50][^51][^52]</span>
 
 <div style="text-align: center">⁂</div>
 
-[^1]: https://www.youtube.com/watch?v=KeA39II7AO8
+[^43]: https://www.youtube.com/watch?v=KeA39II7AO8
 
-[^2]: https://www.youtube.com/watch?v=t1KIazbIlzk
+[^44]: https://www.youtube.com/watch?v=t1KIazbIlzk
 
-[^3]: https://www.youtube.com/watch?v=ppsCxnNm-JI
+[^45]: https://www.youtube.com/watch?v=ppsCxnNm-JI
 
-[^4]: https://www.youtube.com/watch?v=LKFrQXaoSMQ
+[^46]: https://www.youtube.com/watch?v=LKFrQXaoSMQ
 
-[^5]: https://www.youtube.com/watch?v=WbPf4MCIo_U
+[^47]: https://www.youtube.com/watch?v=WbPf4MCIo_U
 
-[^6]: https://www.youtube.com/watch?v=t2_Q2BRzeEE
+[^48]: https://www.youtube.com/watch?v=t2_Q2BRzeEE
 
-[^7]: https://www.youtube.com/watch?v=INGJh9DEaBM
+[^49]: https://www.youtube.com/watch?v=INGJh9DEaBM
 
-[^8]: https://www.youtube.com/watch?v=TTepNRy0wj8
+[^50]: https://www.youtube.com/watch?v=TTepNRy0wj8
 
-[^9]: https://www.youtube.com/watch?v=wUSDVGivd-8
+[^51]: https://www.youtube.com/watch?v=wUSDVGivd-8
 
-[^10]: https://www.youtube.com/watch?v=ORCuz7s5cCY
-
+[^52]: https://www.youtube.com/watch?v=ORCuz7s5cCY

@@ -48,7 +48,7 @@ You access items using their index (position). Indices start at 0 for the first 
 
 ```python
 fruits = ["apple", "banana", "cherry"]
-print(fruits[^0])  # Output: apple (first item)
+print(fruits[0])  # Output: apple (first item)
 print(fruits[-1]) # Output: cherry (last item)
 ```
 
@@ -75,7 +75,7 @@ Since lists are mutable, you can change them easily. Here are common ways.[^3][^
 - **Change an Item**:
 
 ```python
-fruits[^1] = "blueberry"  # Replaces "banana" with "blueberry"
+fruits[1] = "blueberry"  # Replaces "banana" with "blueberry"
 print(fruits)  # Output: ['apple', 'blueberry', 'cherry']
 ```
 
@@ -118,7 +118,7 @@ last = fruits.pop()  # Removes and returns the last item
     - `del`: Deletes by index or the whole list.
 
 ```python
-del fruits[^0]  # Removes first item
+del fruits[0]  # Removes first item
 ```
 
     - `clear()`: Empties the list.
@@ -547,7 +547,7 @@ print(evens)  # Output: [2, 4]
 
 # Using sorted with lambda
 students = [('Alice', 85), ('Bob', 90), ('Charlie', 78)]
-sorted_by_grade = sorted(students, key=lambda student: student[^1])
+sorted_by_grade = sorted(students, key=lambda student: student[1])
 print(sorted_by_grade)  # Sorted by grades
 ```
 
@@ -850,4 +850,3 @@ _Keep experimenting, and you'll soon use `range()` like a pro!_
 [^6]: https://www.youtube.com/watch?v=JsPPjZcTOfw
 
 [^7]: https://www.geeksforgeeks.org/python/python-range-function/
-

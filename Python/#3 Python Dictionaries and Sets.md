@@ -35,11 +35,11 @@ print(data)
 - **Add/Update:**
 `student['email'] = 'arun@email.com'`
 - **Access:**
-`print(student['name'])`   \# Output: Arun
+`print(student['name'])`   # Output: Arun
 - **Remove:**
 `del student['age']`
 - **Check Key Exists:**
-`'name' in student`        \# Output: True
+`'name' in student`        # Output: True
 
 
 ### **Why Dictionaries?**
